@@ -1,0 +1,17 @@
+<div>
+  <div class="name-input">
+    First Name: <input id="firstName" type="text" [(ngModel)]="first_name">
+  </div>
+  <div class="name-input">
+    Last Name: <input id="lastName" type="text" [(ngModel)]="last_name">
+  </div>
+  <div>
+    Angular 10 user name: {{ full_name }}
+  </div>
+  <div>
+    <button (click)="display_name()">Submit</button>
+  </div>
+  <div>
+    <div ng-view></div>
+  </div>
+</div>
